@@ -19,3 +19,24 @@ void setup() {
 void loop(){
     
 }
+
+
+void moveForward() {
+    
+}
+
+void moveBackward() {
+    
+}
+
+void turnLeft() {
+   
+}
+
+void turnRight() {
+    
+}
+
+void stopMotors() {
+   
+}
