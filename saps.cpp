@@ -1,65 +1,27 @@
-
-#define IN1 6
-#define IN2 7
-#define IN3 8
-#define IN4 9
-#define ENA 5
+#define ENA 9
 #define ENB 10
-
+#define IN1 7
+#define IN2 6
+#define IN3 5
+#define IN4 4
 
 void setup() {
-
+    pinMode(ENA, OUTPUT);
+    pinMode(ENB, OUTPUT);
     pinMode(IN1, OUTPUT);
     pinMode(IN2, OUTPUT);
     pinMode(IN3, OUTPUT);
     pinMode(IN4, OUTPUT);
-    pinMode(ENA, OUTPUT);
-    pinMode(ENB, OUTPUT);
-}
-void loop(){
-    
-}
 
+    analogWrite(ENA, 80); // Set speed (0-255)
+    analogWrite(ENB, 80);
 
-void moveForward() {
     digitalWrite(IN1, HIGH);
     digitalWrite(IN2, LOW);
     digitalWrite(IN3, HIGH);
     digitalWrite(IN4, LOW);
-    analogWrite(ENA, 150);
-    analogWrite(ENB, 150);
 }
 
-void moveBackward() {
-    digitalWrite(IN1, LOW);
-    digitalWrite(IN2, HIGH);
-    digitalWrite(IN3, LOW);
-    digitalWrite(IN4, HIGH);
-    analogWrite(ENA, 150);
-    analogWrite(ENB, 150);
-}
-
-void turnLeft() {
-    digitalWrite(IN1, LOW);
-    digitalWrite(IN2, HIGH);
-    digitalWrite(IN3, HIGH);
-    digitalWrite(IN4, LOW);
-    analogWrite(ENA, 100);
-    analogWrite(ENB, 150);
-}
-
-void turnRight() {
-    digitalWrite(IN1, HIGH);
-    digitalWrite(IN2, LOW);
-    digitalWrite(IN3, LOW);
-    digitalWrite(IN4, HIGH);
-    analogWrite(ENA, 150);
-    analogWrite(ENB, 100);
-}
-
-void stopMotors() {
-    digitalWrite(IN1, LOW);
-    digitalWrite(IN2, LOW);
-    digitalWrite(IN3, LOW);
-    digitalWrite(IN4, LOW);
+void loop() {
+    // Robot will keep moving forward
 }
