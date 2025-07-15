@@ -163,7 +163,7 @@ void runInference() {
 
     // Check for crop detection
     bool newCropDetected = false;
-    
+
 #if EI_CLASSIFIER_OBJECT_DETECTION == 1
     // For object detection models
     for (uint32_t i = 0; i < result.bounding_boxes_count; i++) {
@@ -278,7 +278,7 @@ void handleRoot() {
     html += "function toggleLED(){fetch('/led').then(r=>r.text()).then(t=>document.getElementById('ledState').innerText=t)}";
     html += "setInterval(updateInference, 1000);";
     html += "</script></body></html>";
-    
+
     server.send(200, "text/html", html);
 }
 
