@@ -29,6 +29,11 @@ This project implements a **low-cost, AI-powered precision agriculture system** 
 - **Techniques:** Computer Vision, Edge AI, Embedded Systems, IoT Integration
 
 ---
+## Results
 
-## Project Structure
+- Achieved **real-time crop detection with 91% accuracy**.
+- Automated pesticide spraying, reducing chemical usage by 35–40%.
+- Demonstrated a practical, scalable IoT-enabled precision agriculture solution.
+
+---
 
